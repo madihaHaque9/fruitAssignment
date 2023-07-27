@@ -15,7 +15,7 @@
 <body>
   <header>
     <!-- navbar -->
-    <section  >
+    <section class="container" >
       <div class="navbar container bg-red-500 rounded-[50px]   ">
         <div class="navbar-start">
           <div class="dropdown">
@@ -35,7 +35,7 @@
             </div>
   
           </div>
-          <div class="navbar-center ml-1 hidden px-[20px]  lg:flex justify-items-start">
+          <div class="navbar-center ml-1 hidden px-[20px] text-white  lg:flex justify-items-start">
             <ul class="menu menu-horizontal px-1">
               <li><a>Home</a></li>
               <li><a>About Us</a></li>
@@ -45,17 +45,18 @@
           </div>
           <div class="flex items-center justify-center px-[50px] lg:px-[200px]" >
             <img src="./B8A3-fruit-brust/images/logo.png" alt="">
-            <a class="btn btn-ghost normal-case text-xl ">Fruit Burst</a>
+            <a class="btn btn-ghost normal-case text-xl text-white ">Fruit Burst</a>
           </div>
-          <div class="navbar-end text-left hidden lg:pl-44 lg:block">
+          <div class="navbar-end text-left hidden lg:pl-[30%] lg:inline-block">
            <input type="text" placeholder="search" class="rounded-[50px]  p-3 relative">
            <i class="fa-solid fa-magnifying-glass absolute top-7 left-[1200px]" style="color: #5b6b86;"></i>
+          
           </div>
             </div>
       </div>
     </section>
     <!-- slides -->
-    <section>
+    <section class="container mx-auto px-8 md:px-16 lg:px-24 py-5 my-10">
       <div class="carousel w-full">
         <div id="slide1" class="carousel-item relative w-full">
           <div class="hero min-h-screen" style="background-image: url(./B8A3-fruit-brust/images/banner1.png);">
@@ -64,7 +65,7 @@
               <div class="max-w-md text-white">
                 <h1 class="mb-5 text-5xl font-bold">Exotic tastes at your doorstep</h1>
                 <p class="mb-5">We supply highly quality organic products</p>
-                <button class="btn bg-red-300 border-none">Get Started</button>
+                <button class="btn bg-red-300 border-none">Shop Now</button>
               </div>
             </div>
           </div>
@@ -80,7 +81,7 @@
               <div class="max-w-md text-white">
                 <h1 class="mb-5 text-5xl font-bold">Exotic tastes at your doorstep</h1>
                 <p class="mb-5">We supply highly quality organic products</p>
-                <button class="btn bg-red-300 border-none">Get Started</button>
+                <button class="btn bg-red-300 border-none ">Shop Now</button>
               </div>
             </div>
           </div>
@@ -97,7 +98,7 @@
               <div class="max-w-md text-white">
                 <h1 class="mb-5 text-5xl font-bold">Exotic tastes at your doorstep</h1>
                 <p class="mb-5">We supply highly quality organic products</p>
-                <button class="btn bg-red-300 border-none">Get Started</button>
+                <button class="btn bg-red-300 border-none ">Shop Now</button>
               </div>
             </div>
           </div>
@@ -113,7 +114,7 @@
               <div class="max-w-md text-white">
                 <h1 class="mb-5 text-5xl font-bold">Exotic tastes at your doorstep</h1>
                 <p class="mb-5">We supply highly quality organic products</p>
-                <button class="btn bg-red-300 border-none">Get Started</button>
+                <button class="btn bg-red-300 border-none ">Shop Now</button>
               </div>
             </div>
           </div>
@@ -125,7 +126,7 @@
       </div>
       
     </section>
-    <div class="flex absolute -bottom-[100px] left-[130px] bg-white w-[1000px] items-center justify-evenly shadow-lg hidden lg:flex">
+    <div class="flex absolute -bottom-[200px] left-[15%]  bg-white w-[70%] items-center justify-evenly shadow-lg hidden lg:flex">
       <div class="flex flex-col items-center">
         <img src="./B8A3-fruit-brust/images/fruit1.png" alt="">
         <p>Grape</p>
@@ -153,15 +154,17 @@
   </header>
   <main>
     <!-- deal of the day -->
-    <section class="max-w-screen-xl mx-auto px=8 md:px-16 lg:px-24 py-5 my-10">
+    <section class="max-w-screen-xl mx-auto px-8 md:px-16 lg:px-24 py-5 my-10">
       <div class="flex justify-between flex-col lg:flex-row">
-        <div>
+        <div class="flex flex-col items-center lg:items-start flex-1">
           <h3 class="font-bold text-5xl">Deal of the day</h3> <br>
-          <p>Contrary to popular belief, is not simply random text. It has roots in a piece of classical <br> Latin literature from 45 BC, making it over 2000 years old.</p>
+          <div class="flex items-center lg:items-start">
+            <p>Contrary to popular belief, is not simply random text. It has roots in a piece of classical   Latin literature from 45 BC, making it over 2000 years old.</p>
+          </div>
         </div>
-        <div>
+        <div class="flex flex-col items-center lg:items-end flex-1 mt-2">
           <h2 class="font-bold text-5xl ">29:15:25:08</h2> <br>
-          <p class="pr-5 text-[19px] ">Days : Hours : Minutes : Seconds</p>
+          <p class="pr-[5px] text-[19px] ">Days : Hours : Minutes : Seconds</p>
           
         </div>
         
@@ -190,8 +193,36 @@
             <br>
             <div class="card-actions">
              
+<label for="my_modal_6" class="btn  text-red-600">Details</label>
 
-              <button class="btn text-red-600">Details</button>
+
+<input type="checkbox" id="my_modal_6" class="modal-toggle" />
+<div class="modal">
+  <div class="modal-box">
+    <figure class="px-10 pt-10">
+      <img src="./B8A3-fruit-brust/images/fruit6.png" alt="Shoes" class="rounded-xl" />
+    </figure>
+    <div class="card-body items-center text-center">
+      <h2 class="card-title">12.90$ - 18.85$</h2>
+      <hr class="w-[90%]" >
+      <p>Apples</p>
+      <div>
+        <i class="fa-solid fa-star" style="color: #db3624;"></i>
+      <i class="fa-solid fa-star-half" style="color: #db3624;"></i>
+      <i class="fa-solid fa-star" style="color: #e57366;"></i>
+      <i class="fa-solid fa-star" style="color: #e57366;"></i>
+      <i class="fa-solid fa-star" style="color: #e57366;"></i>
+      </div>
+      <div class="modal-action flex gap-[5px]">
+        <label for="my_modal_6" class="btn bg-transparent text-red-500 border-red-700">Close!</label>
+      <label for="my_modal_6" class="btn bg-red-600 text-white">Buy Now!</label>
+      </div>
+    </div>
+  </div>
+</div>
+             
+
+              
             </div>
           </div>
           
@@ -213,11 +244,41 @@
             </div>
             <br>
             <div class="card-actions">
-              <button class="btn text-red-600">Details</button>
+             
+<label for="my_modal_8" class="btn  text-red-600">Details</label>
+
+
+<input type="checkbox" id="my_modal_8" class="modal-toggle" />
+<div class="modal">
+  <div class="modal-box">
+    <figure class="px-10 pt-10">
+      <img src="./B8A3-fruit-brust/images/fruit8.png" alt="Shoes" class="rounded-xl" />
+    </figure>
+    <div class="card-body items-center text-center">
+      <h2 class="card-title">12.90$ - 18.85$</h2>
+      <hr class="w-[90%]">
+      <p>Red Dragon</p>
+      <div>
+        <i class="fa-solid fa-star" style="color: #db3624;"></i>
+      <i class="fa-solid fa-star-half" style="color: #db3624;"></i>
+      <i class="fa-solid fa-star" style="color: #e57366;"></i>
+      <i class="fa-solid fa-star" style="color: #e57366;"></i>
+      <i class="fa-solid fa-star" style="color: #e57366;"></i>
+      </div>
+   
+      <div class="modal-action flex gap-[5px]">
+        <label for="my_modal_8" class="btn bg-transparent text-red-500 border-red-700">Close!</label>
+      <label for="my_modal_8" class="btn bg-red-600 text-white">Buy Now!</label>
+      </div>
+      
+    </div>
+  </div>
+</div>
+              
             </div>
           </div>
         </div>
-        <div class="card w-full bg-base-100 border-2 border-gray-500 ">
+        <div class="card w-full border-2 bg-base-100  border-gray-700">
           <figure class="px-10 pt-10">
             <img src="./B8A3-fruit-brust/images/fruit8.png" alt="Shoes" class="rounded-xl" />
           </figure>
@@ -234,11 +295,41 @@
             </div>
             <br>
             <div class="card-actions">
-              <button class="btn text-red-600">Details</button>
+             
+<label for="my_modal_8" class="btn  text-red-600">Details</label>
+
+
+<input type="checkbox" id="my_modal_8" class="modal-toggle" />
+<div class="modal">
+  <div class="modal-box">
+    <figure class="px-10 pt-10">
+      <img src="./B8A3-fruit-brust/images/fruit7.png" alt="Shoes" class="rounded-xl" />
+    </figure>
+    <div class="card-body items-center text-center">
+      <h2 class="card-title">12.90$ - 18.85$</h2>
+      <hr class="w-[90%]">
+      <p>Red Dragon</p>
+      <div>
+        <i class="fa-solid fa-star" style="color: #db3624;"></i>
+      <i class="fa-solid fa-star-half" style="color: #db3624;"></i>
+      <i class="fa-solid fa-star" style="color: #e57366;"></i>
+      <i class="fa-solid fa-star" style="color: #e57366;"></i>
+      <i class="fa-solid fa-star" style="color: #e57366;"></i>
+      </div>
+   
+      <div class="modal-action flex gap-[5px]">
+        <label for="my_modal_8" class="btn bg-transparent text-red-500 border-red-700">Close!</label>
+      <label for="my_modal_8" class="btn bg-red-600 text-white">Buy Now!</label>
+      </div>
+      
+    </div>
+  </div>
+</div>
+              
             </div>
           </div>
         </div>
-        <div class="card w-full  bg-base-100 border-2  border-gray-500">
+        <div class="card w-full border-2 bg-base-100  border-gray-700">
           <figure class="px-10 pt-10">
             <img src="./B8A3-fruit-brust/images/fruit9.png" alt="Shoes" class="rounded-xl" />
           </figure>
@@ -255,78 +346,126 @@
             </div>
             <br>
             <div class="card-actions">
-              <button class="btn text-red-600">Details</button>
+             
+<label for="my_modal_9" class="btn  text-red-600">Details</label>
+
+
+<input type="checkbox" id="my_modal_9" class="modal-toggle" />
+<div class="modal">
+  <div class="modal-box">
+    <figure class="px-10 pt-10">
+      <img src="./B8A3-fruit-brust/images/fruit9.png" alt="Shoes" class="rounded-xl" />
+    </figure>
+    <div class="card-body items-center text-center">
+      <h2 class="card-title">12.90$ - 18.85$</h2>
+      <hr class="w-[90%]">
+      <p>Banana</p>
+      <div>
+        <i class="fa-solid fa-star" style="color: #db3624;"></i>
+      <i class="fa-solid fa-star-half" style="color: #db3624;"></i>
+      <i class="fa-solid fa-star" style="color: #e57366;"></i>
+      <i class="fa-solid fa-star" style="color: #e57366;"></i>
+      <i class="fa-solid fa-star" style="color: #e57366;"></i>
+      </div>
+   
+      <div class="modal-action flex gap-[5px]">
+        <label for="my_modal_9" class="btn bg-transparent text-red-500 border-red-700">Close!</label>
+      <label for="my_modal_9" class="btn bg-red-600 text-white">Buy Now!</label>
+      </div>
+      
+    </div>
+  </div>
+</div>
+              
             </div>
           </div>
         </div>
        
-
-      </div>
       
 
     </section>
-    <!-- meet the team -->
-    <section class="max-w-screen-xl mx-auto px=8 md:px-16 lg:px-24 py-5 my-10">
-      <div class="hero min-h-screen relative" style="background-image: url('./B8A3-fruit-brust/images/banner1.png');">
-        <div class="hero-overlay bg-opacity-60"></div>
-        <div class="hero-content text-center text-neutral-content">
-          <div class="max-w-md absolute top-5  text-white">
-            <h1 class="mb-5 text-5xl font-bold">Meet the team section</h1>
-            <p class="mb-5">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
-            <div class="flex flex-col w-[100%] lg:flex-row lg:gap-[100px] items-center justify-around text-center">
-              
-                <div  >
-                  <img src="./B8A3-fruit-brust/images/member1.png" alt=""> 
-               
-                <h4 class="font-bold"> Awlad Hossain</h4> 
-                <p> Fruits Expert</p> 
-                <i class="fa-brands fa-facebook" style="color: #e24a18;"></i>
-                <i class="fa-brands fa-twitter " style="color: #e24a18;"></i>
-                <i class="fa-brands fa-linkedin" style="color: #e24a18;"></i>
-                </div>
-               
+    <div class="flex items-center justify-center">
+      <button class="btn bg-red-500 text-white border-none">Shop All</button>
+    </div>
+    
+    <section class="max-w-screen-xl mx-auto px-8 md:px-16 lg:px-24 py-5 my-10" style="background-image: url('./B8A3-fruit-brust/images/banner1.png'); background-repeat: no-repeat; background-size: cover; background-position: center; background-blend-mode: darken;">
+      <div class="text-white text-center">
+        <h1 class="text-3xl">Meet the team section</h1>
+        <p>Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
 
-               
-               
 
+      </div>
+      <div class="flex flex-col  lg:flex-row items-center justify-evenly ">
               
-              <div><img src="./B8A3-fruit-brust/images/member2.png" class="h-[70px]" alt=""> 
                
-                <h4 class="font-bold"> Safia Chowdhury</h4> 
-                <p> Fruits Expert</p> 
-                <i class="fa-brands fa-facebook" style="color: #e24a18;"></i>
-                <i class="fa-brands fa-twitter " style="color: #e24a18;"></i>
-                <i class="fa-brands fa-linkedin" style="color: #e24a18;"></i>
-              </div>
-              <div>
-                <img src="./B8A3-fruit-brust/images/member3.png" alt=""> 
-               
-                <h4 class="font-bold"> Rokib Hossain</h4> 
-                <p> Fruits Expert</p> 
-                <i class="fa-brands fa-facebook" style="color: #e24a18;"></i>
-                <i class="fa-brands fa-twitter " style="color: #e24a18;"></i>
-                <i class="fa-brands fa-linkedin" style="color: #e24a18;"></i>
-              </div>
-              <div>
-                <img src="./B8A3-fruit-brust/images/member4.png"  > 
-               
-                <h4 class="font-bold">Chaity Islam </h4> 
-                <p> Fruits Expert</p> 
-               <div class="gap-[5px]">
-                <i class="fa-brands fa-facebook" style="color: #e24a18;"></i>
-                <i class="fa-brands fa-twitter " style="color: #e24a18;"></i>
-                <i class="fa-brands fa-linkedin" style="color: #e24a18;"></i>
-               </div>
-              </div>
+        <div class="card  bg-transparent ">
+          <figure class="px-10 pt-10">
+            <img src="./B8A3-fruit-brust/images/member1.png" alt="Shoes" class="rounded-xl h-20" />
+          </figure>
+          <div class="card-body items-center text-center text-white">
+            <h2 class="card-title">Awlad Hossain</h2>
+            <p>Fruits Expert</p>
+            <div class="card-actions">
+              <i class="fa-brands fa-facebook text-white" style="color: #e24a18;"></i>
+              <i class="fa-brands fa-twitter " style="color: #e24a18;"></i>
+              <i class="fa-brands fa-linkedin text-white" style="color: #e24a18;"></i>
+              
+            </div>
+          </div>
+        </div>
+        <div class="card  bg-transparent ">
+          <figure class="px-10 pt-10">
+            <img src="./B8A3-fruit-brust/images/member2.png" alt="Shoes" class="rounded-xl h-20 " />
+          </figure>
+          <div class="card-body items-center text-center text-white">
+            <h2 class="card-title">Safia Chowdhury</h2>
+            <p>Fruits <br> Expert</p>
+            <div class="card-actions">
+              <i class="fa-brands fa-facebook text-white" style="color: #e24a18;"></i>
+              <i class="fa-brands fa-twitter " style="color: #e24a18;"></i>
+              <i class="fa-brands fa-linkedin text-white" style="color: #e24a18;"></i>
+              
+            </div>
+          </div>
+        </div>
+        <div class="card  bg-transparent ">
+          <figure class="px-10 pt-10">
+            <img src="./B8A3-fruit-brust/images/member3.png" alt="Shoes" class="rounded-xl h-20 w-20" />
+          </figure>
+          <div class="card-body items-center text-center text-white">
+            <h2 class="card-title">Rokib Hossain</h2>
+            <p>Fruits Expert</p>
+            <div class="card-actions">
+              <i class="fa-brands fa-facebook text-white" style="color: #e24a18;"></i>
+              <i class="fa-brands fa-twitter " style="color: #e24a18;"></i>
+              <i class="fa-brands fa-linkedin text-white" style="color: #e24a18;"></i>
+              
+            </div>
+          </div>
+        </div>
+        <div class="card  bg-transparent ">
+          <figure class="px-10 pt-10">
+            <img src="./B8A3-fruit-brust/images/member4.png" alt="Shoes" class="rounded-xl h-20 w-20" />
+          </figure>
+          <div class="card-body items-center text-center text-white">
+            <h2 class="card-title">Chaity Islam</h2>
+            <p>Fruits Expert</p>
+            <div class="card-actions flex flex-row justify-end items-start relative ">
+              <i class="fa-brands fa-facebook text-white" style="color: #e24a18;"></i>
+              <i class="fa-brands fa-twitter " style="color: #e24a18;"></i>
+              <i class="fa-brands fa-linkedin text-white absolute left-[50px]" style="color: #e24a18;"></i>
+              
             </div>
           </div>
         </div>
       </div>
-     
+
+
+
     </section>
 
     <!-- why choose us -->
-    <section class="max-w-screen-xl mx-auto px=8 md:px-16 lg:px-24 py-5 my-10">
+    <section class="max-w-screen-xl mx-auto px-8 md:px-16 lg:px-24 py-5 my-10">
       <div class="text-center">
         <h2 class="font-bold text-5xl">Why Choose Us</h2> <br>
         <p>Contrary to popular belief, is not simply random text. It has roots in a piece of classical <br> Latin literature from 45 BC, making it over 2000 years old.</p>
@@ -342,7 +481,7 @@
               <h3 class="font-bold text-2xl">Dedicated Team</h3>
             
             
-          <hr class="w-[20%]">
+          <hr class="w-[90%]">
           
           <p>Professional employees are there for you to pick the most amazing and fresh fruits.</p>
           </div>
@@ -352,7 +491,7 @@
           <i class="fa-solid fa-heart fa-2xl top-5"></i>
           <div >
             <h3 class="font-bold text-2xl">Fresh is Best</h3>
-          <hr class="w-[20%]">
+          <hr class="w-[90%]">
           <p>Professional employees are there for you to pick the most amazing and fresh fruits.</p>
           </div>
         </div>
@@ -361,7 +500,7 @@
           <i class="fa-solid fa-gift fa-2xl top-5"></i>
           <div >
             <h3 class="font-bold text-2xl">Gift Certificates</h3>
-          <hr class="w-[20%]">
+          <hr class="w-[90%]">
           <p>Professional employees are there for you to pick the most amazing and fresh fruits.</p>
           </div>
         </div>
@@ -370,13 +509,13 @@
       <div>
         <img src="./B8A3-fruit-brust/images/whychoose1.png" alt="">
       </div>
-      <div class="flex flex-col items-end p-5">
+      <div class="flex flex-col items-end p-5 ">
         <div class="flex gap-[10px] flex-col justify-end ">
          
           <div >
             <h3 class="font-bold text-2xl">Integrated Supplier</h3>
             
-          <hr class="w-[20%]">
+          <hr class="w-[90%]">
           
           <div class="flex">
             <p>Professional employees are there for you to pick the most amazing and fresh fruits.</p><i class="fa-solid fa-lemon fa-2xl"></i>
@@ -388,7 +527,7 @@
           
           <div >
             <h3 class="font-bold text-2xl">Sustainable Practice</h3>
-          <hr class="w-[20%]">
+          <hr class="w-[90%]">
           <div class="flex">
             <p>Professional employees are there for you to pick the most amazing and fresh fruits.</p>
             <i class="fa-solid fa-ice-cream fa-2xl"></i>
@@ -400,7 +539,7 @@
          
           <div >
             <h3 class="font-bold text-2xl">The Benefits Only</h3>
-          <hr class="w-[20%]">
+          <hr class="w-[90%]">
           <div class="flex">
             <p>Professional employees are there for you to pick the most amazing and fresh fruits.</p>
             <i class="fa-solid fa-thumbs-up fa-2xl"></i>
@@ -420,7 +559,7 @@
       <img src="./B8A3-fruit-brust/images/logo.png" alt="">
       <h3 class="text-3xl">Fruit Burst</h3>
     </div> <br>
-    <div class="flex items-center justify-center gap-[20px] flex-shrink">
+    <div class="grid grid-cols-3 lg:grid-cols-6">
       <p>Home</p>
       <p>About Us</p>
       <p>Shop</p>
@@ -429,7 +568,7 @@
       <p>My Account</p>
     </div>
     <br>
-    <div class="flex items-center justify-center gap-10 flex-shrink">
+    <div class="grid grid-cols-3 lg:grid-cols-6 gap-[5px] ">
       <i class="fa-brands fa-twitter" style="color: #e6e9ef;"></i>
       <i class="fa-brands fa-facebook" style="color: #cdd6e5;"></i>
       <i class="fa-brands fa-youtube" style="color: #c8d1df;"></i>
